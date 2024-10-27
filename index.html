@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img.png">
+    <title>Липецк</title>
+
+</head>
+<style>
+    body{
+       background: url("https://cdn.tripster.ru/thumbs2/11674b50-49fd-11ee-8437-7a6caaf80349.1220x600.jpeg");
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size:cover;
+       overflow-y: scroll;
+       height:600%;
+       text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    .center {
+      text-align: center;
+    }
+
+    .block1 {position:absolute;left:4%;top:30%;width:43%;overflow:auto;background:rgba(255, 255, 255, 0.3);border-radius: 10px;}
+    .block2 {position:absolute;right:4%;top:30%;width:43%;overflow:auto;background:rgba(0, 0, 0, 0);}
+    .block3 {position:absolute;right:10%;left:10%;top:80%;width:80%; background:rgba(255, 255, 255, 0.2);border-radius: 10px;overflow:auto;}
+    .block4 {position:absolute;right:10%;left:10%;bottom:5%; width:80%; background:rgba(255, 255, 255, 0.2);border-radius: 10px;overflow:auto;}
+
+
+    h1{
+        font-size:40px;
+    }
+    h2{
+        font-size:30px;
+    }
+    .Form_vxod button{
+        top: 100px;
+        border-radius: 10px;
+        height:10px;
+        font-size:20px;
+        width:80%;
+        transition:0.7s;
+        height:50px;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    .Form_vxod button:hover{
+        background-color: rgba(200, 200, 200, 0.6);
+        height:60px;
+        transition:0.7s;
+    }
+    .galer img{
+        width:50%;
+    }
+
+    .tab button {
+        height:40px;
+        width:40px;
+        font-size:20px;
+        border-radius: 10px;
+        border:none;
+        background:rgba(0, 0, 0, 0.3);
+        transition:1s;
+    }
+
+    .tab button:hover{
+         background:rgba(0, 0, 0, 0.7);
+         color:rgba(255, 255, 255, 1);
+         transition:1s;
+
+    }
+    .tab button.active{
+        background:rgba(0, 0, 0, 0.5);
+        color:rgba(255, 255, 255, 1);
+    }
+    .tabcontent{
+        -webkit-animation: fadeEffect 1s;
+    }
+    @-webkit-keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+
+    .help button{
+        position: fixed;
+        width-min:80px;
+        width:8%;
+        bottom:80px;
+        right:40px;
+        border:none;
+        border-radius:20px;
+        background: linear-gradient(90deg,#ff5c4d,#eb469f 30%,#8341ef 75%,#3f68f9);
+        height:7%;
+        font-family: "Lucida Bright";
+        font-size:20px;
+        color:white;
+        transition:0.7s;
+
+    }
+    .help button:hover{
+        bottom: 90px;
+        transition:0.7s;
+    }
+    .popup {
+      background: linear-gradient(90deg,#ff5c4d,#eb469f 30%,#8341ef 75%,#3f68f9);
+      position: fixed;
+      bottom: 80px;
+      right: 40px;
+      border:none;
+      border-radius:20px;
+      transition:0.7s;
+      font-family: "Lucida Bright";
+      font-size:20px;
+      color:white;
+      width: 30%;
+      height: 50%;
+      -webkit-animation: fadeEffect2 1.6s;
+    }
+    @-webkit-keyframes fadeEffect2 {
+        0% {
+          width:0;
+          height:0;
+          font-size: 0;
+        }
+
+        100% {
+          width:30%;
+          height:50%;
+          font-size: 20px;
+        }
+    }
+    .popup button{
+        position: relative;
+        background:url("https://cdn-icons-png.flaticon.com/512/51/51517.png");
+        background-size: cover;
+        top:10px;
+        left:10px;
+        width:25px;
+        height:25px;
+        border: none;
+        border-radius:5px;
+        transition:0.5s;
+    }
+    .popup button:hover{
+        top:8px;
+        transition:0.5s;
+    }
+    .text{
+        position: relative;
+        top:20px;
+        left:20px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+</style>
+<body>
+    <h1 class="center">Липецк - город с большой буквы!</h1>
+
+    <div class="block1">
+        <div class="poisk center"><h2>Хотите узнать про Липецк больше, чем вы знаете сейчас?<br> Узнайте Каким будет Липецк будущего и какие профессии будут востребованы!</h2></div>
+    </div>
+    <div class="block2">
+        <div class="Form_vxod center">
+            <!--<form action="registrasia.html">
+                <button>Зарегистрироваться</button>
+            </form>
+            <br>
+            <form action="vxod.html">
+                <button>Войти</button>
+            </form>-->
+            <form action="accaunt.html">
+                <button>Узнать больше</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="block3">
+        <div class="tab center">
+            <button class="tablinks" onclick="openCity(event, '1')" id="defaultOpe"><b>1</b></button>
+            <button class="tablinks" onclick="openCity(event, '2')"><b>2</b></button>
+            <button class="tablinks" onclick="openCity(event, '3')"><b>3</b></button>
+        </div>
+        <div class="tabcontent" id="1">
+            <div class="center"><h2>Галерея.</h2></div>
+            <div class="center galer">
+                <img src="https://ethnomir.ru/upload/medialibrary/eb2/1.jpg">
+                <br><br><br><br>
+                <img src="https://opis-cdn.tinkoffjournal.ru/mercury/main_lipetsk-one-day.vsslx2pgabpp.jpg">
+                <br><br><br><br>
+                <img src="https://cdn.tripster.ru/photos/1dbc9032-bd43-4684-87ba-7030edb7ca8a.jpg">
+                <br><br><br><br>
+                <img src="https://lipetskcity.ru/upload/medialibrary/c97/mgkkpdeamjc0fpexlvwxyvf2y2y8nkv3.jpg">
+                <br><br><br><br>
+            </div>
+        </div>
+
+
+        <div class="tabcontent" id="2">
+            <div class="center"><h2>Галерея.</h2></div>
+            <div class="center galer">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkFYWc6wdTw_CKR6eyZrC68apG-SvaGRfXmw&s">
+                <br><br><br><br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVADYjEh581CdadQvTW-z-0v1ZBII5BvUOXg&s">
+                <br><br><br><br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMw0HSwsLDXaZIT1Dw955eH22Mk8wnCYZrdA&s">
+                <br><br><br><br>
+                <img src="https://avatars.mds.yandex.net/get-marketcms/1490511/img-b2221da6-1424-4e79-99e7-a85f0cf1b102.jpeg/optimize">
+                <br><br><br><br>
+            </div>
+        </div>
+
+
+        <div class="tabcontent" id="3">
+            <div class="center"><h2>Галерея.</h2></div>
+            <div class="center galer">
+                <img src="https://lipetskmedia.ru/upload/iblock/a7b/m0b5606wuwtlij492ajlb9f6wizuhxib.jpg">
+                <br><br><br><br>
+                <img src="https://rg.ru/uploads/images/201/59/94/5p_graffiti-2.jpg">
+                <br><br><br><br>
+                <img src="https://media.istockphoto.com/id/1214581327/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%87%D0%B0%D1%81%D0%BE%D0%B2%D0%BD%D1%8F-%D0%BF%D0%B5%D1%82%D1%80%D0%B0-%D0%B8-%D0%BF%D0%B0%D0%B2%D0%BB%D0%B0-%D0%B2-%D0%BB%D0%B8%D0%BF%D0%B5%D1%86%D0%BA%D0%B5-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D1%8F.jpg?s=2048x2048&w=is&k=20&c=gss_YtT49WaB0EWCjVqIyPdaq2CmoOlW64PHWYZJKh0=">
+                <br><br><br><br>
+                <img src="https://abireg.ru/newsimages/slimg/929/92942.jpg">
+                <br><br><br><br>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpe").click();
+    </script>
+    <div class="help">
+        <button onclick="openPopup()">Помощь</button>
+    </div>
+    <div class="popup">
+        <button onclick="closePopup()"></button>
+        <br>
+        <div class="text">
+            <p>Если вы  нашли ошибку на сайте, обнаружили неполадку или хотите что-то предложить, то пишите на почту a.r.2011@internet.ru.</p><p>Заранее приносим извинения.</p>
+        </div>
+    </div>
+    <script>
+        function openPopup() {
+          var popup = document.querySelector('.popup');
+          popup.style.display = 'block';
+        }
+        function closePopup() {
+          var popup = document.querySelector('.popup');
+          popup.style.display = 'none';
+        }
+        var popup = document.querySelector('.popup');
+        popup.style.display = 'none';
+    </script>
+
+
+</body>
+</html>

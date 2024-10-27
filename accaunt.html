@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img.png">
+    <title>Липецк</title>
+</head>
+<style>
+    body{
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size:cover;
+       transition:1s;
+
+    }
+    .center {
+      text-align: center;
+    }
+    .background button{
+        position: absolute;
+        background: white;
+        transition:1s;
+        border:none;
+        border-radius:15px;
+        height: 50px;
+        width: 130px;
+        font-size:15px;
+        right:10px;
+        top:10px;
+
+    }
+    .background button:hover{
+        transition:1s;
+        background: grey;
+    }
+    .back{
+        position: absolute;
+        background: white;
+        transition:1s;
+        border:none;
+        border-radius:15px;
+        height: 50px;
+        width: 130px;
+        font-size:15px;
+        right:10px;
+        top:10px;
+    }
+    .back:hover{
+        transition:1s;
+        background: grey;
+    }
+    .block1{
+        position: relative;
+        background: linear-gradient(180deg, rgba(255, 0, 153, 0.6) 0%, rgba(120, 203, 194, 0.6) 49.99%, rgba(21, 220, 31, 0.6) 100%);
+        width: 400px;
+        height: 320px;
+    }
+    .block2{
+        position: relative;
+        background: linear-gradient(180deg, rgba(255, 149, 0, 0.6) 0%, rgba(202, 237, 27, 0.6) 50%, rgba(171, 22, 22, 0.6) 100%);
+        width: 400px;
+        height: 320px;
+    }
+    .block3{
+        position: relative;
+        background: linear-gradient(180deg, rgba(0, 255, 111, 0.6) 0%, rgba(38, 199, 231, 0.6) 50%, rgba(89, 94, 232, 0.6) 100%);
+        width: 400px;
+        height: 320px;
+    }
+    .block12{
+        position: relative;
+        background: linear-gradient(180deg, #11ED71 0%, #53F6D0 49.5%, #337D85 100%);
+        width: 400px;
+        height: 400px;
+    }
+    .block13{
+        position: relative;
+        background: linear-gradient(180deg, #DE4B4E 0%, #FEFA1D 25.5%, #E4AD48 73.5%, #D85C0E 99.99%);
+        width: 400px;
+        height: 400px;
+    }
+
+    .BLOCK2{
+	    position: relative;
+	    display: block;
+	    width: 100%;
+	    top: 50px;
+	    box-sizing: border-box;
+	    text-align: justify;
+
+
+    }
+	.BLOCK2:after{
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		height: auto;
+		box-sizing: border-box;
+		vertical-align: top;
+		content: '';
+	}
+	.BLOCK2>div{
+		position: relative;
+		display: inline-block;
+		box-sizing: border-box;
+
+		/* Свои стили */
+	}
+    .BLOCK{
+	    position: relative;
+	    display: block;
+	    width: 100%;
+	    top: 180px;
+	    box-sizing: border-box;
+	    text-align: justify;
+	    /* Свои стили */
+
+    }
+	.BLOCK:after{
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		height: auto;
+		box-sizing: border-box;
+		vertical-align: top;
+		content: '';
+	}
+	.BLOCK>div{
+		position: relative;
+		display: inline-block;
+		box-sizing: border-box;
+
+		/* Свои стили */
+	}
+	.BLOCK button{
+	    position: relative;
+	    background:white;
+	    width: 250px;
+        height: 50px;
+        box-shadow: 0px 16px 32px -8px rgba(12, 12, 13, 0.7);
+        border-radius: 90px;
+        transition:1s;
+        top:40px;
+        font-size:15px;
+
+	}
+	.BLOCK button:hover{
+
+	    background:grey;
+	    transition:1s;
+	}
+	img{
+	    position: relative;
+	    top:40px;
+	    height:200px;
+	}
+	h2{
+	    position: relative;
+	    top:40px;
+	}
+	.block12 div{
+	    position: relative;
+	    top:40px;
+	}
+	.block13 div{
+	    position: relative;
+	    top:40px;
+	}
+    .im2 img{
+        height:300px;
+
+        border: 15px solid red;
+        border-image: linear-gradient(90deg, #CC2424 0%, #23B718 100%);
+        border-image-slice: 15;
+
+    }
+    @-webkit-keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    .prof{
+        -webkit-animation: fadeEffect 1s;
+
+    }
+    .galle{
+        -webkit-animation: fadeEffect 1s;
+    }
+    .main{
+        -webkit-animation: fadeEffect 1s;
+    }
+    .play{
+        -webkit-animation: fadeEffect 1s;
+    }
+    .back2 button{
+        position: relative;
+	    background:white;
+	    width: 250px;
+        height: 50px;
+        box-shadow: 0px 16px 32px -8px rgba(12, 12, 13, 0.7);
+        border-radius: 90px;
+        transition:1s;
+        top:200px;
+        font-size:15px;
+    }
+    .back2 button:hover{
+        background:grey;
+	    transition:1s;
+
+    }
+
+
+
+    .help button{
+        position: fixed;
+        width-min:80px;
+        width:8%;
+        bottom:80px;
+        right:40px;
+        border:none;
+        border-radius:20px;
+        background: linear-gradient(90deg,#ff5c4d,#eb469f 30%,#8341ef 75%,#3f68f9);
+        height:7%;
+        font-family: "Lucida Bright";
+        font-size:20px;
+        color:white;
+        transition:0.7s;
+
+    }
+    .help button:hover{
+        bottom: 90px;
+        transition:0.7s;
+    }
+    .pr {
+      background: linear-gradient(90deg,#ff5c4d,#eb469f 30%,#8341ef 75%,#3f68f9);
+      position: fixed;
+      bottom: 80px;
+      right: 40px;
+      border:none;
+      border-radius:20px;
+      transition:0.7s;
+      font-family: "Lucida Bright";
+      font-size:20px;
+      color:white;
+      width: 30%;
+      height: 50%;
+      -webkit-animation: fadeEffect2 1.6s;
+    }
+    @-webkit-keyframes fadeEffect2 {
+        0% {
+          width:0;
+          height:0;
+          font-size: 0;
+        }
+
+        100% {
+          width:30%;
+          height:50%;
+          font-size: 20px;
+        }
+    }
+    .pr button{
+        position: relative;
+        background:url("https://cdn-icons-png.flaticon.com/512/51/51517.png");
+        background-size: cover;
+        top:10px;
+        left:10px;
+        width:25px;
+        height:25px;
+        border: none;
+        border-radius:5px;
+        transition:0.5s;
+    }
+    .pr button:hover{
+        top:8px;
+        transition:0.5s;
+    }
+    .text{
+        position: relative;
+        top:20px;
+        left:20px;
+        bottom: 20px;
+        right: 20px;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="background">
+            <div class="white_background">
+                <button onclick="white()">Светлая тема</button>
+            </div>
+            <div class="black_background">
+                <button onclick="black()">Тёмная тема</button>
+            </div>
+        </div>
+        <div class="BLOCK">
+            <div class="block1 center">
+                <img src="images\img_1.png">
+                <button onclick="prof()">Востребованные профессии</button>
+            </div>
+            <div class="block2 center">
+                <img src="images\img_2.png">
+                <br>
+                <button onclick="play()">Развлечения</button>
+            </div>
+            <div class="block3 center">
+                <img src="images\img.png">
+                <button onclick="gall()">Галлерея</button>
+            </div>
+        </div>
+        <form action="index.html" class="center back2">
+            <button>Назад</button>
+        </form>
+        <br>
+        <form action="S.html" class="back2 center">
+            <button >Ссылки</button>
+        </form>
+    </div>
+    <script>
+        function black() {
+          document.body.style.backgroundImage = 'url(https://cdn.tripster.ru/photos/1dbc9032-bd43-4684-87ba-7030edb7ca8a.jpg)';
+          var popup = document.querySelector('.white_background');
+          popup.style.display = 'block';
+          var popup2 = document.querySelector('.black_background');
+          popup2.style.display = 'none';
+        }
+        function white() {
+          document.body.style.backgroundImage = 'url(https://cdn.tripster.ru/thumbs2/11674b50-49fd-11ee-8437-7a6caaf80349.1220x600.jpeg)';
+          var popup = document.querySelector('.black_background');
+          popup.style.display = 'block';
+          var popup2 = document.querySelector('.white_background');
+          popup2.style.display = 'none';
+        }
+        document.body.style.backgroundImage = 'url(https://cdn.tripster.ru/thumbs2/11674b50-49fd-11ee-8437-7a6caaf80349.1220x600.jpeg)';
+        var popup = document.querySelector('.black_background');
+        popup.style.display = 'block';
+        var popup2 = document.querySelector('.white_background');
+        popup2.style.display = 'none';
+    </script>
+    <div class="galle">
+        <br><br>
+        <h1 class="center">Галлерея</h1>
+        <button onclick="main()" class="back center">Назад</button>
+        <div class="center im2">
+            <img loading='lazy' src="images4\img.png">
+            <img loading='lazy' src="images4\img_1.png">
+            <br>
+            <img loading='lazy' src="images4\img_2.png">
+            <img loading='lazy' src="images4\img_3.png">
+            <br>
+            <img loading='lazy' src="images4\img_4.png">
+            <img loading='lazy' src="images4\img_5.png">
+            <img loading='lazy' src="https://ethnomir.ru/upload/medialibrary/eb2/1.jpg">
+            <img loading='lazy' src="https://opis-cdn.tinkoffjournal.ru/mercury/main_lipetsk-one-day.vsslx2pgabpp.jpg">
+            <br>
+            <img loading='lazy' src="https://cdn.tripster.ru/photos/1dbc9032-bd43-4684-87ba-7030edb7ca8a.jpg">
+            <img loading='lazy' src="https://lipetskcity.ru/upload/medialibrary/c97/mgkkpdeamjc0fpexlvwxyvf2y2y8nkv3.jpg">
+            <br>
+            <img loading='lazy' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkFYWc6wdTw_CKR6eyZrC68apG-SvaGRfXmw&s">
+            <img loading='lazy' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVADYjEh581CdadQvTW-z-0v1ZBII5BvUOXg&s">
+            <br>
+            <img loading='lazy' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMw0HSwsLDXaZIT1Dw955eH22Mk8wnCYZrdA&s">
+            <img loading='lazy' src="https://avatars.mds.yandex.net/get-marketcms/1490511/img-b2221da6-1424-4e79-99e7-a85f0cf1b102.jpeg/optimize">
+            <br>
+        </div>
+    </div>
+
+
+
+    <div class="prof">
+        <br><br>
+        <h1 class="center">Востребованные профессии</h1>
+        <button onclick="main()" class="back center">Назад</button>
+
+
+
+        <div class="BLOCK2">
+            <div class="block12 center">
+                <img src="images2\img_2.png">
+                <br>
+                <div>Одна из стабильно развивающихся и хорощо оплачиваемых профессий в Липецкой области. Аграрная отрасль является важнейшей частью экономики Липецка, его жемчужиной.</div>
+                <h2>Аграном</h2>
+            </div>
+            <div class="block12 center">
+                <img src="images2\img_1.png">
+                <br>
+                <div> Представители данной профессии важны для любой компании, в том числе и в Липецкой области. Профессия хорошо оплачивается, можно найти много вакансий.</div>
+                <br>
+                <h2>Аналитик</h2>
+            </div>
+            <div class="block12 center">
+                <img src="images2\img.png">
+                <br>
+                <div>В связи с множеством предприятий, эта профессия очень востребована на Липецкой земле. Стабильный зароботок и множество вакансий делает эту профессию совершенно незаменимой и нужной.</div>
+                <h2>Инженер</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="play">
+        <br><br>
+        <h1 class="center">Развлечения</h1>
+        <button onclick="main()" class="back center">Назад</button>
+
+
+
+
+         <div class="BLOCK2">
+            <div class="block13 center">
+                <img src="images3\img_2.png">
+                <br>
+                <div>Одна из самых известных достопремичательностей Липецкой земли. Все знают этот парк по одной статуе в его центре - огромному Змею Горынычу. А по вечерам он даже извергает огонь.</div>
+                <h2>Кудыкина гора</h2>
+            </div>
+            <div class="block13 center">
+                <img src="images3\img.png">
+                <br>
+                <div>Известнейший парк, находящийся в городской черте Липецка. Здесь расположен минеральный источник, где можно набрать и попить легендарной Липецкой минеральной воды. </div>
+
+                <h2>Нижний парк</h2>
+            </div>
+            <div class="block13 center">
+                <img src="images3\img_1.png">
+                <br>
+                <div>Находится в центре Липецка. В зоопарке собраны многие виды животных, также есть контактная часть. Некоторых зверей сотрудники также разрешают кормить.</div>
+                <br>
+                <h2>Липецкий зоопарк</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function main(){
+            var popup = document.querySelector('.main');
+            popup.style.display = 'block';
+            var popup2 = document.querySelector('.prof');
+            popup2.style.display = 'none';
+            var popup3 = document.querySelector('.play');
+            popup3.style.display = 'none';
+            var popup4 = document.querySelector('.galle');
+            popup4.style.display = 'none';
+        }
+        function gall(){
+            var popup = document.querySelector('.main');
+            popup.style.display = 'none';
+            var popup2 = document.querySelector('.prof');
+            popup2.style.display = 'none';
+            var popup3 = document.querySelector('.play');
+            popup3.style.display = 'none';
+            var popup4 = document.querySelector('.galle');
+            popup4.style.display = 'block';
+        }
+        function prof(){
+            var popup = document.querySelector('.main');
+            popup.style.display = 'none';
+            var popup2 = document.querySelector('.prof');
+            popup2.style.display = 'block';
+            var popup3 = document.querySelector('.play');
+            popup3.style.display = 'none';
+            var popup4 = document.querySelector('.galle');
+            popup4.style.display = 'none';
+        }
+        function play(){
+            var popup = document.querySelector('.main');
+            popup.style.display = 'none';
+            var popup2 = document.querySelector('.prof');
+            popup2.style.display = 'none';
+            var popup3 = document.querySelector('.play');
+            popup3.style.display = 'block';
+            var popup4 = document.querySelector('.galle');
+            popup4.style.display = 'none';
+        }
+        var popup = document.querySelector('.main');
+        popup.style.display = 'block';
+        var popup2 = document.querySelector('.prof');
+        popup2.style.display = 'none';
+        var popup3 = document.querySelector('.play');
+        popup3.style.display = 'none';
+        var popup4 = document.querySelector('.galle');
+        popup4.style.display = 'none';
+
+    </script>
+    <div class="help">
+        <button onclick="openPopup()">Помощь</button>
+    </div>
+    <div class="pr">
+        <button onclick="closePopup()"></button>
+        <br>
+        <div class="text">
+            <p>Если вы  нашли ошибку на сайте, обнаружили неполадку или хотите что-то предложить,<br> то пишите на почту a.r.2011@internet.ru.</p><p>Заранее приносим извинения.</p>
+        </div>
+    </div>
+    <script>
+        function openPopup() {
+          var pr = document.querySelector('.pr');
+          pr.style.display = 'block';
+        }
+        function closePopup() {
+          var pr = document.querySelector('.pr');
+          pr.style.display = 'none';
+        }
+        var pr = document.querySelector('.pr');
+        pr.style.display = 'none';
+    </script>
+
+</body>
+</html>
